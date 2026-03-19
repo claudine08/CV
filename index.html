@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Claudinê Pinto | Gerente de Projetos Senior | PMP · AI · Cloud</title>
+<meta name="description" content="Gerente de Projetos Senior com +14 anos em transformação digital. Azure, SAP, Salesforce, Scrum, PMBOK. Embraer, Mars, Itaú/Edenred, Latecoere, Ericsson.">
+<meta name="keywords" content="Gerente de Projetos, PMP, PMBOK, Scrum, Kanban, SAFe, Azure, Cloud, SAP, Salesforce, Oracle, Power BI, Jira, Transformação Digital, AI, Machine Learning, Agile">
+<meta name="author" content="Claudinê da Cunha Pinto Junior">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ═══ TOKENS ═══ */
+:root {
+  --navy:     #080f1e;
+  --navy-2:   #0d1728;
+  --navy-3:   #112240;
+  --navy-4:   #1a3357;
+  --gold:     #c9a84c;
+  --gold-2:   #e2bf6e;
+  --gold-3:   #f0d48a;
+  --teal:     #64ffda;
+  --teal-2:   #a8fce8;
+  --slate:    #8892b0;
+  --slate-2:  #a8b2d8;
+  --light:    #ccd6f6;
+  --white:    #e6f1ff;
+  --card:     rgba(13,23,40,0.85);
+  --border:   rgba(201,168,76,0.18);
+  --border-2: rgba(201,168,76,0.35);
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--navy);color:var(--light);line-height:1.7;font-size:15px;-webkit-font-smoothing:antialiased}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{background:var(--navy)}
+::-webkit-scrollbar-thumb{background:var(--gold);border-radius:3px}
+
+/* HEADER */
+.header{background:linear-gradient(145deg,#040a14 0%,#080f1e 45%,#0b1830 100%);padding:56px 48px 52px;position:relative;overflow:hidden;border-bottom:1px solid var(--border)}
+.hglow{position:absolute;pointer-events:none;border-radius:50%;filter:blur(80px)}
+.hglow-1{width:420px;height:420px;top:-160px;right:-60px;background:radial-gradient(circle,rgba(201,168,76,.12),transparent 70%);opacity:.55}
+.hglow-2{width:300px;height:300px;bottom:-120px;left:40px;background:radial-gradient(circle,rgba(100,255,218,.06),transparent 70%);opacity:.55}
+.hline{position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent 0%,var(--gold) 40%,var(--gold-2) 60%,transparent 100%)}
+.h-inner{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:1fr auto;gap:48px;align-items:center;position:relative}
+.name-block h1{font-family:'Playfair Display',serif;font-size:clamp(34px,4.8vw,54px);font-weight:900;color:var(--white);letter-spacing:-.5px;line-height:1.05}
+.name-block h1 em{color:var(--gold);font-style:normal}
+.title-line{font-size:12.5px;font-weight:600;letter-spacing:3.5px;text-transform:uppercase;color:var(--gold);margin:12px 0 14px;opacity:.9}
+.tagline{color:var(--slate-2);font-size:14px;max-width:540px;line-height:1.8}
+.tagline strong{color:var(--light);font-weight:500}
+.contact-col{display:flex;flex-direction:column;gap:10px;align-items:flex-end}
+.citem{font-size:12.5px;color:var(--slate);display:flex;align-items:center;gap:9px}
+.citem strong{color:var(--light);font-weight:500}
+.cicon{width:26px;height:26px;flex-shrink:0;background:rgba(201,168,76,.1);border:1px solid var(--border);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:12px}
+.avail{display:inline-flex;align-items:center;gap:7px;background:rgba(100,255,218,.07);border:1px solid rgba(100,255,218,.22);color:var(--teal);padding:6px 14px;border-radius:20px;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-top:6px}
+.pulse{width:7px;height:7px;background:var(--teal);border-radius:50%;animation:blink 2s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+
+/* KPIs */
+.kpi-wrap{max-width:1120px;margin:0 auto;padding:36px 48px 0}
+.kpi-row{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.kpi-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:22px 18px;text-align:center;opacity:0;transform:translateY(18px);transition:opacity .5s ease,transform .5s ease,border-color .3s,box-shadow .3s}
+.kpi-card.vis{opacity:1;transform:translateY(0)}
+.kpi-card:hover{border-color:var(--border-2);box-shadow:0 6px 28px rgba(201,168,76,.1);transform:translateY(-4px)!important}
+.kpi-n{font-family:'Playfair Display',serif;font-size:32px;font-weight:900;color:var(--gold);display:block;line-height:1}
+.kpi-l{font-size:10.5px;color:var(--slate);text-transform:uppercase;letter-spacing:1.8px;margin-top:6px;display:block}
+
+/* LAYOUT */
+.layout{max-width:1120px;margin:0 auto;padding:44px 48px 60px;display:grid;grid-template-columns:1fr 310px;gap:40px}
+
+/* SECTION */
+.section{margin-bottom:50px;opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease}
+.section.vis{opacity:1;transform:translateY(0)}
+.sec-title{font-family:'Playfair Display',serif;font-size:19px;font-weight:700;color:var(--white);margin-bottom:22px;padding-bottom:12px;border-bottom:1px solid rgba(201,168,76,.12);position:relative}
+.sec-title::after{content:'';position:absolute;bottom:-1px;left:0;width:36px;height:2px;background:linear-gradient(90deg,var(--gold),var(--gold-2));border-radius:1px}
+
+/* SUMMARY */
+.summary{color:var(--slate-2);font-size:14.5px;line-height:1.95;background:var(--card);padding:26px 30px;border-radius:12px;border:1px solid var(--border);border-left:3px solid var(--gold)}
+
+/* EXP CARDS */
+.exp-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:24px 26px;margin-bottom:14px;position:relative;overflow:hidden;transition:border-color .3s,box-shadow .3s}
+.exp-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(180deg,var(--gold),var(--gold-2));opacity:0;transition:opacity .3s}
+.exp-card:hover{border-color:var(--border-2);box-shadow:0 4px 24px rgba(201,168,76,.07)}
+.exp-card:hover::before{opacity:1}
+.exp-head{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px}
+.exp-role{font-weight:700;font-size:15px;color:var(--white)}
+.exp-company{font-size:13px;color:var(--teal);font-weight:500;margin:3px 0 2px}
+.exp-client{font-size:12px;color:var(--slate);margin-bottom:12px}
+.exp-period{font-size:11px;background:rgba(201,168,76,.09);color:var(--gold);padding:4px 11px;border-radius:20px;border:1px solid rgba(201,168,76,.2);white-space:nowrap;font-weight:600;flex-shrink:0}
+.exp-desc{font-size:13.5px;color:var(--slate);line-height:1.82}
+.exp-desc strong{color:var(--light);font-weight:600}
+.tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:13px}
+.tag{font-size:10px;padding:3px 9px;background:rgba(100,255,218,.05);border:1px solid rgba(100,255,218,.14);color:var(--teal);border-radius:4px;font-weight:600;letter-spacing:.6px;text-transform:uppercase}
+.tag-dev{background:rgba(251,191,36,.07);border-color:rgba(251,191,36,.3);color:#fbbf24}
+
+/* PROJECT */
+.project-card{background:linear-gradient(145deg,rgba(201,168,76,.05) 0%,rgba(13,23,40,.95) 100%);border:1px solid rgba(201,168,76,.28);border-radius:12px;padding:26px 28px;position:relative;overflow:hidden}
+.project-card::after{content:'⚙';position:absolute;top:16px;right:20px;font-size:32px;opacity:.08;pointer-events:none}
+.proj-name{font-family:'Playfair Display',serif;font-size:20px;color:var(--gold);margin-bottom:8px}
+.dev-pill{display:inline-flex;align-items:center;gap:6px;background:rgba(251,191,36,.09);border:1px solid rgba(251,191,36,.3);color:#fbbf24;font-size:10.5px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;padding:5px 12px;border-radius:20px;margin-bottom:14px}
+.pulse-y{width:6px;height:6px;border-radius:50%;background:#fbbf24;animation:blink 1.6s infinite}
+.proj-desc{font-size:13.5px;color:var(--slate);line-height:1.85}
+
+/* SIDEBAR */
+.s-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:22px 20px;margin-bottom:18px;opacity:0;transform:translateX(18px);transition:opacity .6s ease,transform .6s ease}
+.s-card.vis{opacity:1;transform:translateX(0)}
+.s-title{font-family:'Playfair Display',serif;font-size:13px;font-weight:700;color:var(--gold);text-transform:uppercase;letter-spacing:2.5px;margin-bottom:18px}
+.sk{margin-bottom:15px}
+.sk-head{font-size:12px;color:var(--light);margin-bottom:7px;display:flex;justify-content:space-between}
+.sk-head span:last-child{color:var(--slate);font-size:11px}
+.sk-track{height:3px;background:rgba(255,255,255,.07);border-radius:2px;overflow:hidden}
+.sk-fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--gold-2));border-radius:2px;transform:scaleX(0);transform-origin:left}
+.badges{display:flex;flex-wrap:wrap;gap:6px}
+.bdg{font-size:11px;padding:5px 10px;background:rgba(201,168,76,.07);border:1px solid rgba(201,168,76,.18);color:var(--gold);border-radius:5px;font-weight:500}
+.edu{margin-bottom:13px;padding-bottom:13px;border-bottom:1px solid rgba(255,255,255,.05)}
+.edu:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.edu-deg{font-size:13px;font-weight:600;color:var(--light);line-height:1.4}
+.edu-sub{font-size:11px;color:var(--slate);margin-top:3px}
+.lang{display:flex;align-items:center;justify-content:space-between;margin-bottom:11px}
+.lang-n{font-size:13px;color:var(--light)}
+.lang-l{font-size:10px;padding:2px 9px;border-radius:10px;background:rgba(100,255,218,.07);border:1px solid rgba(100,255,218,.18);color:var(--teal);font-weight:700}
+.intl-item{margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,.04)}
+.intl-item:last-child{border-bottom:none;margin-bottom:0}
+.intl-country{font-size:13px;font-weight:600;color:var(--light);display:flex;align-items:center;gap:6px}
+.intl-detail{font-size:11.5px;color:var(--slate);margin-top:3px;line-height:1.5}
+
+/* FOOTER */
+.footer{text-align:center;padding:28px;font-size:11px;color:rgba(136,146,176,.35);border-top:1px solid rgba(201,168,76,.08);letter-spacing:2px}
+
+/* ATS */
+.ats{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+
+/* ═══════════════ CHATBOT ═══════════════ */
+.chat-wrap{position:fixed;bottom:22px;right:22px;z-index:2000}
+.chat-btn{width:58px;height:58px;border-radius:50%;border:none;cursor:pointer;background:linear-gradient(135deg,var(--gold) 0%,var(--gold-2) 100%);box-shadow:0 8px 28px rgba(201,168,76,.45);display:flex;flex-direction:column;align-items:center;justify-content:center;margin-left:auto;transition:transform .3s,box-shadow .3s;font-size:22px}
+.chat-btn:hover{transform:scale(1.1);box-shadow:0 12px 36px rgba(201,168,76,.55)}
+.chat-panel{width:370px;background:#0a1525;border:1px solid var(--border);border-radius:18px;overflow:hidden;box-shadow:0 24px 72px rgba(0,0,0,.65);margin-bottom:14px;display:none;flex-direction:column;max-height:560px;animation:panelIn .28s ease}
+.chat-panel.open{display:flex}
+@keyframes panelIn{from{opacity:0;transform:translateY(12px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+.chat-hd{background:linear-gradient(135deg,var(--navy-3),var(--navy-4));padding:15px 18px;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--border)}
+.chat-av{width:38px;height:38px;flex-shrink:0;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold-2));display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:var(--navy)}
+.chat-hd-info h4{font-size:13px;font-weight:700;color:var(--white)}
+.chat-hd-info p{font-size:11px;color:var(--teal);display:flex;align-items:center;gap:5px;margin-top:2px}
+.online-dot{width:5px;height:5px;border-radius:50%;background:var(--teal);animation:blink 2s infinite}
+.chat-x{margin-left:auto;background:none;border:none;color:var(--slate);cursor:pointer;font-size:20px;padding:4px;transition:color .2s;line-height:1}
+.chat-x:hover{color:var(--white)}
+.chat-msgs{flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:10px;scrollbar-width:thin;scrollbar-color:rgba(201,168,76,.3) transparent}
+.msg{max-width:90%;padding:10px 14px;border-radius:11px;font-size:13px;line-height:1.65;white-space:pre-line;animation:msgIn .28s ease}
+@keyframes msgIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.msg.bot{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);color:var(--light);align-self:flex-start;border-bottom-left-radius:3px}
+.msg.user{background:linear-gradient(135deg,rgba(201,168,76,.22),rgba(201,168,76,.1));border:1px solid rgba(201,168,76,.28);color:var(--white);align-self:flex-end;border-bottom-right-radius:3px}
+.msg.typing{color:var(--slate);align-self:flex-start;font-size:18px;background:rgba(255,255,255,.04);letter-spacing:2px}
+.chat-sugs{padding:10px 14px;display:flex;gap:6px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.05)}
+.sug{padding:5px 11px;background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.2);color:var(--gold);border-radius:7px;font-size:11px;cursor:pointer;transition:background .2s;font-family:'DM Sans',sans-serif;font-weight:500}
+.sug:hover{background:rgba(201,168,76,.18)}
+.chat-input-row{padding:12px 14px;display:flex;gap:8px;border-top:1px solid var(--border)}
+.chat-in{flex:1;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:9px;padding:9px 13px;color:var(--white);font-size:13px;font-family:'DM Sans',sans-serif;outline:none;transition:border-color .2s}
+.chat-in:focus{border-color:rgba(201,168,76,.45)}
+.chat-in::placeholder{color:var(--slate)}
+.chat-go{background:var(--gold);border:none;border-radius:9px;width:38px;height:38px;cursor:pointer;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:16px;transition:background .2s,transform .2s}
+.chat-go:hover{background:var(--gold-2);transform:scale(1.06)}
+
+/* RESPONSIVE */
+@media(max-width:960px){.layout{grid-template-columns:1fr}.kpi-row{grid-template-columns:repeat(2,1fr)}.h-inner{grid-template-columns:1fr}.contact-col{align-items:flex-start}.citem{justify-content:flex-start}.chat-panel{width:calc(100vw - 32px);max-width:370px}}
+@media(max-width:560px){.header{padding:40px 24px 36px}.kpi-wrap,.layout{padding-left:24px;padding-right:24px}}
+</style>
+
+
+
+</head>
+<body>
+
+<div class="ats" aria-hidden="true">Gerente de Projetos Senior PMP PMBOK Scrum Kanban SAFe Agile Azure Cloud Computing Salesforce SAP Oracle Power BI Jira Confluence Transformação Digital Machine Learning AI Inteligência Artificial PMO Budget Stakeholder Management Risk Management Embraer Mars Itaú Edenred Latecoere Ericsson São José dos Campos São Paulo Brasil Inglês Fluente Gestão Internacional</div>
+
+<!-- ═══ HEADER ═══ -->
+<header class="header">
+  <div class="hglow hglow-1"></div>
+  <div class="hglow hglow-2"></div>
+  <div class="h-inner">
+    <div class="name-block">
+      <h1>Claudin&#234; <em>Pinto</em></h1>
+      <div class="title-line">Gerente de Projetos Senior &nbsp;·&nbsp; PMP &nbsp;·&nbsp; AI &nbsp;·&nbsp; Cloud</div>
+      <p class="tagline"><strong>+14 anos</strong> liderando transformação digital em ambientes globais &nbsp;·&nbsp; Aeroespacial · Fintech · Cloud · Manufatura</p>
+    </div>
+    <div class="contact-col">
+      <div class="citem"><div class="cicon">📞</div><strong>(12) 98141-8661</strong></div>
+      <div class="citem"><div class="cicon">✉</div><strong>ccpjr8@gmail.com</strong></div>
+      <div class="citem"><div class="cicon">📍</div>São José dos Campos, SP</div>
+      <div class="avail"><span class="pulse"></span>Disponível para oportunidades</div>
+    </div>
+  </div>
+  <div class="hline"></div>
+</header>
+
+<!-- ═══ KPIs ═══ -->
+<div class="kpi-wrap">
+  <div class="kpi-row">
+    <div class="kpi-card"><span class="kpi-n">14+</span><span class="kpi-l">Anos de Experiência</span></div>
+    <div class="kpi-card"><span class="kpi-n">$10M</span><span class="kpi-l">Maior Projeto Gerenciado</span></div>
+    <div class="kpi-card"><span class="kpi-n">300+</span><span class="kpi-l">Apps Migradas para Cloud</span></div>
+    <div class="kpi-card"><span class="kpi-n">25</span><span class="kpi-l">Pessoas Lideradas</span></div>
+  </div>
+</div>
+
+<!-- ═══ LAYOUT ═══ -->
+<div class="layout">
+<main>
+
+  <!-- PERFIL -->
+  <div class="section">
+    <div class="sec-title">Perfil Profissional</div>
+    <p class="summary">Gerente de Projetos Senior com mais de 14 anos de experiência liderando iniciativas de transformação digital em setores como Aeroespacial, Fintech, Cloud, Manufatura, Governo e Telecom. Histórico comprovado na gestão de projetos de alta complexidade (US$&thinsp;50K–$10M), com proficiência em metodologias PMBOK, Scrum, Kanban e SAFe. Especialista em Cloud Computing (Azure), integração de sistemas corporativos (SAP, Salesforce, Oracle) e liderança de equipes multidisciplinares e internacionais. Inglês fluente com experiência presencial em EUA, França e Inglaterra.</p>
+  </div>
+
+  <!-- EXPERIÊNCIA -->
+  <div class="section">
+    <div class="sec-title">Experiência Profissional</div>
+
+    <div class="exp-card">
+      <div class="exp-head">
+        <div><div class="exp-role">Gerente de Projetos Senior</div><div class="exp-company">KAAD Soluções</div><div class="exp-client">Cliente: Embraer — Unidades Executiva, Comercial, Defesa e Serviços</div></div>
+        <div class="exp-period">08/2021 – 05/2023</div>
+      </div>
+      <p class="exp-desc">Liderou projetos de média e alta complexidade com objetivos de segurança de sistemas, conformidade legal e de auditoria, transformação digital de processos e atualização de sistemas legados. Gerou <strong>economia superior a USD&thinsp;100K</strong> por meio de otimização de custos e racionalização de fornecedores. Responsável pela gestão de fornecedores e equipes internacionais, controle de budget (RFP, RFI, CRF), gestão de mudanças, engajamento de stakeholders e reporting para comitê executivo e PMO.</p>
+      <div class="tags"><span class="tag">Salesforce</span><span class="tag">Shield</span><span class="tag">CPQ</span><span class="tag">SAP PI</span><span class="tag">APIGee</span><span class="tag">Java</span><span class="tag">Oracle</span><span class="tag">Scrum</span><span class="tag">Kanban</span><span class="tag">Jira</span><span class="tag">Confluence</span><span class="tag">Power BI</span></div>
+    </div>
+
+    <div class="exp-card">
+      <div class="exp-head">
+        <div><div class="exp-role">Gerente de Projetos Senior</div><div class="exp-company">Service IT</div><div class="exp-client">Cliente: Edenred do Brasil — Projeto Itaú Credit</div></div>
+        <div class="exp-period">03/2021 – 04/2021</div>
+      </div>
+      <p class="exp-desc">Gerenciou integração estratégica da Repom/Ticket Log com o banco Itaú para validação de crédito em tempo real por portadores do cartão Ticket Log. Coordenou escopo, custo, prazo e comunicação com stakeholders em ambiente multi-cloud.</p>
+      <div class="tags"><span class="tag">Oracle R12</span><span class="tag">Salesforce</span><span class="tag">API REST</span><span class="tag">IBM Cloud</span></div>
+    </div>
+
+    <div class="exp-card">
+      <div class="exp-head">
+        <div><div class="exp-role">Gerente de Projetos Senior</div><div class="exp-company">Mastery</div><div class="exp-client">Cliente: Mars do Brasil</div></div>
+        <div class="exp-period">04/2019 – 02/2020</div>
+      </div>
+      <p class="exp-desc">Conduziu migração completa de plataforma Linux (Suse → Red Hat), migração de <strong>300+ aplicações</strong> para Farm Citrix 7.15 e implantação de infraestrutura em nuvem <strong>Azure</strong> para a unidade Core Services. Liderou apresentações de resultado à diretoria e estruturação do escritório de projetos (PMO).</p>
+      <div class="tags"><span class="tag">Azure</span><span class="tag">Citrix</span><span class="tag">Xendesktop</span><span class="tag">Linux Red Hat</span><span class="tag">VMware</span><span class="tag">Oracle</span><span class="tag">PMO</span></div>
+    </div>
+
+    <div class="exp-card">
+      <div class="exp-head">
+        <div><div class="exp-role">Gerente de Projetos Senior</div><div class="exp-company">Disys / Embraer</div><div class="exp-client">Unidade de Negócios: Defesa e Segurança (EDS)</div></div>
+        <div class="exp-period">08/2016 – 04/2017</div>
+      </div>
+      <p class="exp-desc">Gerenciou projetos da unidade de defesa e segurança da Embraer, controlando equipes de consultores, tempo, custo e qualidade com tecnologias SAP, Totvs, Oracle e Java.</p>
+      <div class="tags"><span class="tag">SAP</span><span class="tag">Totvs</span><span class="tag">Oracle</span><span class="tag">Java</span></div>
+    </div>
+
+    <div class="exp-card">
+      <div class="exp-head">
+        <div><div class="exp-role">Gerente de Novas Tecnologias</div><div class="exp-company">Prefeitura Municipal de Jacareí</div></div>
+        <div class="exp-period">12/2014 – 08/2016</div>
+      </div>
+      <p class="exp-desc">Gerenciou TI completo — sistemas, infraestrutura, datacenter, telecom e facilities. Implementou boas práticas ITIL, liderou projetos estratégicos e gerenciou contratos e licitações de tecnologia.</p>
+      <div class="tags"><span class="tag">ITIL</span><span class="tag">PMI</span><span class="tag">Datacenter</span><span class="tag">Gestão de Contratos</span></div>
+    </div>
+
+    <div class="exp-card">
+      <div class="exp-head">
+        <div><div class="exp-role">Planejador / Gerente de Projetos Internacional</div><div class="exp-company">Latecoere do Brasil</div><div class="exp-client">Projetos Internacionais — Parceria com Matriz na França</div></div>
+        <div class="exp-period">03/2011 – 07/2013</div>
+      </div>
+      <p class="exp-desc">Liderou projetos internacionais de alto valor: <strong>Reintegra</strong> — venda direta de aeronaves à Embraer (12 meses, <strong>US$&thinsp;10M</strong>); <strong>Kanban Automatizado SAP</strong> (4 meses, US$&thinsp;50K); e <strong>Rollout México</strong>. Coordenou equipes remotas de até 10 pessoas, liderou tecnicamente módulos SAP (MM, SD, PP, CO, FI) e apresentou resultados à diretoria.</p>
+      <div class="tags"><span class="tag">SAP MM</span><span class="tag">SAP SD</span><span class="tag">SAP PP</span><span class="tag">SAP FI/CO</span><span class="tag">MRP</span><span class="tag">Gestão Internacional</span></div>
+    </div>
+
+    <div class="exp-card">
+      <div class="exp-head">
+        <div><div class="exp-role">Especialista de Testes / Coordenador de Produção</div><div class="exp-company">Ericsson Telecomunicações S/A</div></div>
+        <div class="exp-period">1998 – 2007 (períodos)</div>
+      </div>
+      <p class="exp-desc">Coordenou equipe de produção com <strong>25 pessoas</strong>. Projetos internacionais: <strong>Overlay da Rede VIVO</strong> em parceria com a Suécia (+50% na capacidade de testes GSM) e <strong>Transferência de Tecnologia EUA→Brasil</strong> para linha de produção de micro-células.</p>
+      <div class="tags"><span class="tag">GSM</span><span class="tag">Telecom</span><span class="tag">Gestão de Produção</span><span class="tag">Testes de Sistema</span></div>
+    </div>
+
+  </div>
+
+  <!-- PROJETO EM DESENVOLVIMENTO -->
+  <div class="section">
+    <div class="sec-title">Projeto em Desenvolvimento</div>
+    <div class="project-card">
+      <div class="proj-name">ObraSim — Plataforma de IA para Gestão de Obras</div>
+      <div class="dev-pill"><span class="pulse-y"></span>Em desenvolvimento ativo</div>
+      <p class="proj-desc">Iniciativa própria atualmente em desenvolvimento ativo — ainda não disponível como produto final. A plataforma utiliza Inteligência Artificial para o planejamento inteligente de obras civis e está sendo construída para contemplar: simulação de cenários construtivos, análise preditiva de custos e cronogramas, e visualização avançada da relação Tempo × Caminho Crítico. O projeto aplica na prática as competências em AI, modelagem de processos e gestão de projetos acumuladas ao longo da carreira, com potencial de escalabilidade para o mercado de construção civil e infraestrutura.</p>
+      <div class="tags" style="margin-top:15px">
+        <span class="tag">Inteligência Artificial</span>
+        <span class="tag">Python</span>
+        <span class="tag">Análise Preditiva</span>
+        <span class="tag">Simulação de Cenários</span>
+        <span class="tag">Caminho Crítico</span>
+        <span class="tag tag-dev">Em Desenvolvimento</span>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<!-- SIDEBAR -->
+<aside>
+  <div class="s-card">
+    <div class="s-title">Competências Técnicas</div>
+    <div class="sk"><div class="sk-head"><span>Gestão de Projetos (PMBOK)</span><span>Expert</span></div><div class="sk-track"><div class="sk-fill" data-w="0.96"></div></div></div>
+    <div class="sk"><div class="sk-head"><span>Metodologias Ágeis</span><span>Expert</span></div><div class="sk-track"><div class="sk-fill" data-w="0.93"></div></div></div>
+    <div class="sk"><div class="sk-head"><span>Cloud / Azure</span><span>Avançado</span></div><div class="sk-track"><div class="sk-fill" data-w="0.88"></div></div></div>
+    <div class="sk"><div class="sk-head"><span>SAP (MM, SD, PP, FI)</span><span>Avançado</span></div><div class="sk-track"><div class="sk-fill" data-w="0.85"></div></div></div>
+    <div class="sk"><div class="sk-head"><span>Power BI / Analytics</span><span>Avançado</span></div><div class="sk-track"><div class="sk-fill" data-w="0.82"></div></div></div>
+    <div class="sk"><div class="sk-head"><span>AI / Machine Learning</span><span>Avançado</span></div><div class="sk-track"><div class="sk-fill" data-w="0.80"></div></div></div>
+    <div class="sk"><div class="sk-head"><span>Salesforce</span><span>Intermediário</span></div><div class="sk-track"><div class="sk-fill" data-w="0.75"></div></div></div>
+  </div>
+
+  <div class="s-card">
+    <div class="s-title">Frameworks &amp; Ferramentas</div>
+    <div class="badges">
+      <span class="bdg">PMBOK</span><span class="bdg">Scrum</span><span class="bdg">Kanban</span><span class="bdg">SAFe</span><span class="bdg">ITIL</span><span class="bdg">6 Sigma</span><span class="bdg">Design Thinking</span><span class="bdg">OKR</span><span class="bdg">Jira</span><span class="bdg">Confluence</span><span class="bdg">MS Project</span><span class="bdg">Power BI</span><span class="bdg">Visio</span><span class="bdg">WBS</span><span class="bdg">UML</span>
+    </div>
+  </div>
+
+  <div class="s-card">
+    <div class="s-title">Formação Acadêmica</div>
+    <div class="edu"><div class="edu-deg">Mestrado em Inovação Tecnológica (Matérias Isoladas)</div><div class="edu-sub">Python/Kivy · Blockchain · Meio Ambiente &amp; Inovação ·2019–2021 &amp; Gestão de Inovação Tecnológica AI - 2024; Sistemas Cognitivos Artificiais e Robôtica Social - 2025</div></div>
+    <div class="edu"><div class="edu-deg">Pós-Graduação em Gestão de Projetos em TI / PMI</div><div class="edu-sub">Concluído em 2009</div></div>
+    <div class="edu"><div class="edu-deg">Bacharelado em Ciência da Computação</div><div class="edu-sub">Concluído em 2004</div></div>
+    <div class="edu"><div class="edu-deg">Técnico em Informática Industrial</div><div class="edu-sub">Concluído em 1993</div></div>
+  </div>
+
+  <div class="s-card">
+    <div class="s-title">Idiomas</div>
+    <div class="lang"><span class="lang-n">Português</span><span class="lang-l">Nativo</span></div>
+    <div class="lang"><span class="lang-n">Inglês</span><span class="lang-l">Fluente</span></div>
+    <div style="font-size:11.5px;color:var(--slate);margin-top:10px;line-height:1.8">🇬🇧 Isle of Wight College, Inglaterra<br>🇺🇸 Projeto Ericsson, EUA &nbsp;·&nbsp; 🇫🇷 Latecoere, França</div>
+  </div>
+
+  <div class="s-card">
+    <div class="s-title">Experiência Internacional</div>
+    <div class="intl-item"><div class="intl-country">🇫🇷 França, Toulouse</div><div class="intl-detail">2012 e 2013 — Projetos SAP Latecoere, liderança com equipes francesas</div></div>
+    <div class="intl-item"><div class="intl-country">🇬🇧 Inglaterra, Isle of Wight</div><div class="intl-detail">2005 — Imersão no idioma, Isle of Wight College, Voluntariado</div></div>
+    <div class="intl-item"><div class="intl-country">🇺🇸 EUA, Lynchburg</div><div class="intl-detail">2001 — Transferência de tecnologia Ericsson</div></div>
+  </div>
+</aside>
+</div>
+
+<footer class="footer">CLAUDINÊ DA CUNHA PINTO JUNIOR &nbsp;·&nbsp; GERENTE DE PROJETOS SENIOR &nbsp;·&nbsp; PMP &nbsp;·&nbsp; AI &nbsp;·&nbsp; CLOUD</footer>
+
+<!-- ═══ CHATBOT ═══ -->
+<div class="chat-wrap">
+  <div class="chat-panel" id="chatPanel">
+    <div class="chat-hd">
+      <div class="chat-av">CP</div>
+      <div class="chat-hd-info">
+        <h4>Assistente do Claudinê</h4>
+        <p><span class="online-dot"></span>Disponível para recrutadores</p>
+      </div>
+      <button class="chat-x" onclick="toggleChat()">&#10005;</button>
+    </div>
+    <div class="chat-msgs" id="chatMsgs">
+      <div class="msg bot">👋 Olá! Sou o assistente virtual do Claudinê. Pergunte sobre experiência, habilidades, Áreas de Interesse ou disponibilidade!</div>
+    </div>
+    <div class="chat-sugs" id="chatSugs">
+      <button class="sug" onclick="sendSug(this)">ObraSim</button>
+      <button class="sug" onclick="sendSug(this)">Experiência internacional</button>
+      <button class="sug" onclick="sendSug(this)">Disponibilidade</button>
+      <button class="sug" onclick="sendSug(this)">Diferenciais</button>
+      <button class="sug" onclick="sendSug(this)">Mestrado</button>
+      <button class="sug" onclick="sendSug(this)">Áreas de Interesse</button>
+    </div>
+    <div class="chat-input-row">
+      <input class="chat-in" id="chatInput" placeholder="Pergunte sobre o Claudinê..." onkeydown="if(event.key==='Enter')sendMsg()">
+      <button class="chat-go" onclick="sendMsg()">&#10148;</button>
+    </div>
+  </div>
+  <button class="chat-btn" onclick="toggleChat()" id="chatBtn">
+    <span id="chatIcon">💬</span>
+  </button>
+</div>
+
+<script>
+/* ═══════════════════════════════════════════
+   BASE DE CONHECIMENTO — chatbot 100% offline
+   Cada entrada: { k:[keywords], a:"resposta" }
+   Score por ocorrência · palavras compostas valem mais
+═══════════════════════════════════════════ */
+var KB=[
+  {k:["embraer","kaad","transformacao","defesa","seguranca","conformidade","shield","cpq","heroku","apigee"],
+   a:"Na Embraer (via KAAD Soluções, 2021–2023), Claudinê atuou como GP Senior em projetos de transformação digital, segurança de sistemas e conformidade legal/auditoria.\n\n✅ Economia gerada: USD 100K+\n✅ Gestão de budget: RFP, RFI, CRF\n✅ Reporting para comitê executivo e PMO\n\n🔧 Stack: Salesforce Shield/CPQ, SAP PI, APIGee, Java, Oracle, Scrum, Kanban, Power BI, Jira, Confluence."},
+
+  {k:["mars","mastery","citrix","xendesktop","300 aplicacoes","migracao","linux","red hat","suse","servidores","vmware"],
+   a:"Na Mars do Brasil (via Mastery, 2019–2020), Claudinê liderou:\n\n☁ Migração de 300+ aplicações para Farm Citrix 7.15\n☁ Migração de 200+ servidores para Azure\n☁ Migração de plataforma Linux Suse → Red Hat\n☁ Estruturação do PMO local\n\nApresentou resultados diretamente à diretoria. Stack: Azure, Citrix, VMware, Oracle."},
+
+  {k:["itau","edenred","ticket log","repom","service it","credito","financeiro","ibm cloud"],
+   a:"Na Edenred/Itaú Credit (Service IT, 2021), Claudinê gerenciou a integração Repom/Ticket Log → Banco Itaú para validação de crédito em tempo real para portadores do cartão.\n\n📌 Gestão de escopo, custo, prazo e stakeholders\n🔧 Stack: Oracle R12, Salesforce, API REST, IBM Cloud."},
+
+  {k:["cloud","azure","nuvem","cloud computing","infraestrutura em nuvem"],
+   a:"Claudinê tem experiência sólida em Cloud Computing:\n\n☁ Azure — migrou 300+ apps e 200+ servidores (Mars)\n☁ IBM Cloud — projeto Edenred/Itaú\n\nDomina Azure, VMware, Citrix Xendesktop e Linux Red Hat. Formação em Cloud Computing Fundamentos."},
+
+  {k:["scrum","kanban","agil","agile","safe","metodologia agil","sprint","backlog","squad","iteracao"],
+   a:"Claudinê domina metodologias ágeis:\n\n• Scrum — preparatório PSM I\n• Kanban — aplicado na Embraer e outros projetos\n• SAFe — ambientes corporativos de grande escala\n• PMBOK — combinado com ágil em projetos complexos\n\nUtiliza OKR, Design Thinking e Liderança Ágil."},
+
+  {k:["PMBOK","pmbok","pmi","pmp","gestao de projetos","escritorio de projetos","pmo","portfolio","governanca","risco"],
+   a:"Claudinê é especialista em Gestão de Projetos, possui certificação PMP - Project Management Professional/PMI (2021), além de Pós-Graduação em GP TI/PMI (2009)\n🏆 Gerenciou Projetos de US$ 50K a US$ 10M \n🏆 Ajudou a estruturar PMO na Mars do Brasil\n🏆 e trabalhou com PMOs na Embraer e EdenRed\n\nDomina gestão de riscos, escopo, custo, prazo e qualidade."},
+
+  {k:["sap","sap mm","sap sd","sap pp","sap fi","sap co","sap pi","modulo sap","erp","totvs","oracle","datasul"],
+   a:"Claudinê tem expertise avançada no ECC6 \n 📦trabalhou como consultor SAP MM e PP, implantando solução fiscal propietária da LKM Consultoria em empresas como Bridgestone e Votorantim \n📦 Gerenciou projetos de rollout do ECC 6 na Latecoere do Brasil e liderou equipes de implantação de melhorias e soluções do SAP na França. \n📦 na Embraer gerenciou projetos de melhoria e de implantação de soluções envolvendo ECC 6, Salesforce e ferramentas de ALM \n📦 na EdenRed gerenciou projetos de integração de sistemas com Oracle R12 — projetos Edenred/Itaú\n📦 solução de meio de pagamento envolvendo produtos da linha ticket"},
+
+  {k:["latecoere","reintegra","kanban automatizado","rollout","mexico","franca","toulouse","10m","aeronave","aeronautica","aeroespacial"],
+   a:"Na Latecoere do Brasil (2011–2013), projetos internacionais com a matriz na França:\n\n✈ Reintegra — venda de aeronaves à Embraer (12 meses, US$ 10M)\n✈ Kanban Automatizado SAP — (4 meses, US$ 50K)\n✈ Rollout México — entrada em produção SAP ECC6\n\nEquipes de até 10 pessoas. Presença física em Toulouse, França (2012 e 2013)."},
+
+  {k:["ericsson","gsm","vivo","telecom","telecomunicacoes","suecia","transferencia de tecnologia","microcelula","producao","testes"],
+   a:"Na Ericsson Telecomunicações (1998–2007), Claudinê coordenou equipe de 25 pessoas.\n\n🌐 Overlay da Rede VIVO — parceria Suécia: +50% na capacidade de testes GSM\n🌐 Transferência de Tecnologia EUA→Brasil — linha de produção de micro-células (Lynchburg, 2001)"},
+
+  {k:["obrasim","obra","obras","construcao civil","civil","ia para obras","predicao","simulacao","caminho critico","plataforma propria"],
+   a:"🔧 ObraSim está em DESENVOLVIMENTO ATIVO — ainda não é um produto finalizado.\n\nPlataforma própria com IA para planejamento inteligente de obras civis:\n\n⚙ Simulação de cenários de prazo e custo\n⚙ Análise preditiva com dados históricos\n⚙ Visualização Tempo × Caminho Crítico\n\n🛠 Stack: Python + Inteligência Artificial\nDemonstra aplicação prática de AI em gestão de projetos complexos."},
+
+  {k:["ingles","inglês","idioma","fluente","isle of wight","lingua","internacional","experiencia internacional"],
+   a:"Claudinê tem inglês fluente — estudou no Isle of Wight College (Inglaterra).\n\n🇺🇸 EUA, Lynchburg — 2001 (Ericsson)\n🇫🇷 França, Toulouse — 2012 e 2013 (Latecoere)\n🇬🇧 Inglaterra, Isle of Wight — 2005 (imersão cultural, programa de voluntariado e estudos)\n\nLiderou equipes internacionais remotas na Embraer e na Mars \n Liderou equipes presenciais na Latecoere em Toulouse - FR \n foi responsável técnico pelos testes em projeto de transferência de tecnologia da Ericsson (Lynchburg - EUA) para Ericsson (SJC - BR)"},
+
+  {k:["formacao","graduacao","mestrado","pos graduacao","faculdade","ciencia da computacao","blockchain","python","Desenvolvimento de Aplicativos para Inovação Digital","treinamento","certificacao"],
+   a:"Formação acadêmica:\n\n🎓 Claudinê está se preparando para cursar o Mestrado Profissional em Inovação Tecnológica na UNIFESP SJC cursou as seguintes matérias isoladas como aluno especial (Python/Kivy, Blockchain, Meio Ambiente, Empreendedorismo, Seminários Interdisciplinares 2019–2021, Gestão da Inovação e Negócios Digitais, 2024, Sistemas Cognitivos Artificiais e Robôtica Social, 2025)\n🎓 provavelmente sua pesquisa será na linha de processos e produtos tecnológicos \n🎓 Pós-Graduação GP TI/PMI (2009)\n🎓 Bacharelado Ciência da Computação (2004)\n🎓 Técnico em Informática Industrial (1993)\n\nCursos: Scrum PSM I, OKR, Design Thinking, Cloud, 6 Sigma White Belt, AI."},
+
+  {k:["disponivel","disponibilidade","vaga","oportunidade","presencial","remoto","hibrido","contrato","regime"],
+   a:"✅ Claudinê está disponível para novas oportunidades!\n\nAceita: Presencial · Híbrido · Remoto\n\n📞 (12) 98141-8661\n✉ ccpjr8@gmail.com\n📍 São José dos Campos, SP"},
+
+  {k:["contato","telefone","email","whatsapp","como falar","celular"],
+   a:"📞 (12) 98141-8661 (WhatsApp)\n✉ ccpjr8@gmail.com\n📍 São José dos Campos, SP"},
+
+  {k:["resumo","perfil","quem e","quem é","experiencia","anos","trajetoria","sobre","background"],
+   a:"Claudinê da Cunha Pinto Junior — GP Senior.\n\n📌 +14 anos em transformação digital\n📌 Setores: Aeroespacial, Fintech, Cloud, Manufatura, Telecom, Governo\n📌 Projetos de até US$ 10M\n📌 Liderou até 25 pessoas\n📌 Inglês fluente | 3 países\n\nEmpresas: Embraer, Mars, Itaú/Edenred, Latecoere, Ericsson"},
+
+  {k:["power bi","dashboard","relatorio","indicadores","kpi","dados","analytics", "status report"],
+   a:"Claudinê utiliza Power BI para dashboards de KPIs e status reports, comunicando resultados visualmente para gerências e comitês executivos. Ferramenta central nos projetos Embraer (KAAD Soluções), Mars do Brasil (Mastery Consulting)."},
+
+  {k:["prefeitura","jacarei","jacareí","governo","publico","licitacao","municipal"],
+   a:"Na Prefeitura de Jacareí (2014–2016):\n\n🏛 Gestão completa da TI municipal\n🏛 Sistemas, infraestrutura, datacenter, telecom\n🏛 Implementação de ITIL\n🏛 Gestão de contratos e licitações de tecnologia"},
+
+  {k:["diferencial","Diferenciais","destaque","ponto forte","por que contratar","vantagem"],
+   a:"Principais diferenciais:\n\n🌟 Experiência internacional em 3 países (EUA, França, Inglaterra)\n🌟 Projetos de até US$ 10M entregues com sucesso\n🌟 Base técnica profunda + visão estratégica\n🌟 Inglês fluente — liderança de times globais\n🌟 +14 anos entregando no prazo e no orçamento\n🌟 AI aplicada a projetos reais (ObraSim)\n🌟 Domínio de PMBOK, Ágil, SAP, Cloud e Salesforce"},
+
+  {k:["salesforce","crm","cpq","heroku","lightning","apex"],
+   a:"Claudinê tem experiência intermediária em Salesforce:\n\n• Salesforce Shield — segurança avançada (Embraer/KAAD)\n• Salesforce CPQ — configuração e preço\n• Salesforce + API REST — integração Edenred/Itaú\n\nAtuou como GP Senior em projetos Salesforce na Embraer."},
+
+  {k:["professor","docente","ensino","fatesf","itj","aula","lecionar"],
+   a:"Claudinê atuou no ensino:\n\n📚 FATESF (2011–2013): Eng. de Software, Banco de Dados, Sistemas Integrados\n📚 ITJ (2009–2013): Informática, Programação e Inglês Técnico\n\nReinforça capacidade de comunicação e transferência de conhecimento."},
+
+  {k:["Áreas de Interesse", "área de interesse", "interessado", "estuda o que?", "atualizado", "como se mantêm atualizado"],
+   a: "Claudinê acredita no conceito lifelong learning, ele adora estudar e esta constantemente buscando novos conhecimentos e habilidades, adaptando-se às mudanças e inovações que moldam o mundo \n alguns dos seus interesses atuais são:\n Sustentabilidade e Energias Renováveis, Transformação Digital, AI aplicado a Saúde, Indústria 5.0, AI na Construção Cívil e Sistemas Complexos. \n\n Está especificamente envolvido em desenvolver soluções inovadoras com machine learning. Se quiser posso listar seus últimos cursos?"},
+
+  {k:["sim","ok","últimos cursos"],
+   a: "\n Microsoft Azure AI Fundamentals 03/04/2024, \n Conceitos de Nuvem na AWS 13/06/2024, \nSegurança, Governança e Conformidade na Nuvem AWS 04/07/2024, \n Introdução ao Machine Learning 26/12/2024, \nLinguagens de Programação para Machine Learning 26/12/2024, \n Python para Machine Learning na Prática 28/12/2024"},
+
+  {k:["habilidades", "habilidades comportamentais", "comportamento"],
+   a: "Claudinê tem um perfil Criativo, gosta de independência para executar seus projetos tem como pontos fortes: \n ✅Pensamento Analítico e Sistêmico \n✅ Problem Solver \n✅ Mentalidade Inovadora \n✅ Self-Learning \n✅ Comunicador \n✅ Resiliência"},
+
+
+  {k:["COMPETÊNCIAS CHAVE", "competências"],
+   a: "\n🏛Gestão de Projetos (PMBOK, PMO) · Metodologias Ágeis e Híbridas · Planejamento e Controle · Gestão de Riscos e Stakeholders · Liderança de Equipes Técnicas · Gestão de Fornecedores · Governança de TI · Transformação Digital · Integração de Sistemas · Cloud Computing · Ferramentas de Gestão (Jira, MS Project, Confluence, Power BI)"}
+
+
+
+];
+
+  
+
+var FALLBACK=[
+  "Não encontrei resposta exata. Tente perguntar sobre:\n• Embraer, Cloud/Azure, SAP, Latecoere, Ericsson\n• Metodologias ágeis, PMBOK, PMO\n• ObraSim, AI, Python\n• Disponibilidade ou contato",
+  "Para informações específicas, contate diretamente:\n📞 (12) 98141-8661\n✉ ccpjr8@gmail.com",
+  "Ainda não tenho dados sobre isso. Pergunte sobre projetos, habilidades ou experiência internacional!"
+];
+var fbI=0;
+
+function norm(s){
+  return s.toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g,'')
+    .replace(/[^a-z0-9\s]/g,' ')
+    .replace(/\s+/g,' ').trim();
+}
+
+function findAnswer(q){
+  var nq=norm(q),best=null,bs=0;
+  KB.forEach(function(item){
+    var sc=0;
+    item.k.forEach(function(kw){
+      var nk=norm(kw);
+      if(nq.indexOf(nk)>=0) sc+=nk.split(' ').length*2;
+    });
+    if(sc>bs){bs=sc;best=item;}
+  });
+  return (best&&bs>0)?best.a:FALLBACK[fbI++%FALLBACK.length];
+}
+
+var chatOpen=false,sugsHidden=false;
+
+function toggleChat(){
+  chatOpen=!chatOpen;
+  document.getElementById('chatPanel').classList.toggle('open',chatOpen);
+  document.getElementById('chatIcon').textContent=chatOpen?'✕':'💬';
+}
+function scrollB(){var el=document.getElementById('chatMsgs');el.scrollTop=el.scrollHeight;}
+function addMsg(text,type){
+  var d=document.createElement('div');
+  d.className='msg '+type;d.textContent=text;
+  document.getElementById('chatMsgs').appendChild(d);
+  scrollB();return d;
+}
+function hideSugs(){if(!sugsHidden){document.getElementById('chatSugs').style.display='none';sugsHidden=true;}}
+function sendSug(btn){document.getElementById('chatInput').value=btn.textContent;sendMsg();}
+function sendMsg(){
+  var inp=document.getElementById('chatInput'),text=inp.value.trim();
+  if(!text)return;inp.value='';
+  hideSugs();addMsg(text,'user');
+  var ty=addMsg('● ● ●','typing');
+  var ans=findAnswer(text);
+  setTimeout(function(){ty.remove();addMsg(ans,'bot');},420);
+}
+
+/* SCROLL ANIMATIONS */
+var obs=new IntersectionObserver(function(entries){
+  entries.forEach(function(e,i){
+    if(!e.isIntersecting)return;
+    setTimeout(function(){
+      e.target.classList.add('vis');
+      e.target.querySelectorAll('.sk-fill').forEach(function(b){
+        var w=parseFloat(b.getAttribute('data-w')||1);
+        setTimeout(function(){
+          b.style.transition='transform 1.3s cubic-bezier(0.4,0,0.2,1)';
+          b.style.transform='scaleX('+w+')';
+        },150);
+      });
+    },i*90);
+    obs.unobserve(e.target);
+  });
+},{threshold:0.1});
+document.querySelectorAll('.section,.kpi-card,.s-card').forEach(function(el){obs.observe(el);});
+</script>
+</body>
+</html>
