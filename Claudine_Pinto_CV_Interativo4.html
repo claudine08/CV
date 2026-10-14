@@ -646,7 +646,7 @@ document.querySelectorAll('.section,.kpi-card,.s-card').forEach(function(el){obs
   }
 
   function deliver(geo){
-    var body=JSON.stringify({access_key:KEY,from_name:'CV Interativo',subject:subject(geo),message:compose(geo)});
+    var body=JSON.stringify({access_key:KEY,from_name:'CV Claudinê',reply_to:'ccpjr8@gmail.com',subject:subject(geo),message:compose(geo)});
     try{
       if(window.fetch) fetch(ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json'},body:body}).catch(function(){});
       else{ var x=new XMLHttpRequest(); x.open('POST',ENDPOINT,true); x.setRequestHeader('Content-Type','application/json'); x.send(body); }
